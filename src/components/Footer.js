@@ -1,6 +1,5 @@
 import React from "react";
 import injectSheet from "react-jss";
-import PropTypes from "prop-types";
 const styles = theme => ({
   root: {
     display: "flex",
@@ -21,16 +20,16 @@ const Footer = ({ classes, children }) => (
   <div className={classes.root}>
     <img alt="placeholder" src="https://via.placeholder.com/100x50" />
     <div className={classes.links}>
-      <a href="#" className={classes.link}>
+      <a href="###" className={classes.link}>
         Our Purpose
       </a>
-      <a href="#" className={classes.link}>
+      <a href="##" className={classes.link}>
         Contact Us
       </a>
-      <a href="#" className={classes.link}>
+      <a href="##" className={classes.link}>
         Twitter
       </a>
-      <a href="#" className={classes.link}>
+      <a href="##" className={classes.link}>
         Facebook
       </a>
     </div>

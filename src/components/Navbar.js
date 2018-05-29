@@ -1,6 +1,5 @@
 import React from "react";
 import injectSheet from "react-jss";
-import PropTypes from "prop-types";
 const styles = theme => ({
   root: {
     height: 100,
@@ -40,7 +39,7 @@ class Navbar extends React.Component {
     });
   }
   render() {
-    const { classes, theme } = this.props;
+    const { classes } = this.props;
     const { scrolled } = this.state;
     return (
       <nav
