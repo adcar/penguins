@@ -54,9 +54,9 @@ class Navbar extends React.Component {
 					<img alt="placeholder" src="https://via.placeholder.com/100x50" />
 				</Jump>
 				<div>
-					<Jump to="#our-purpose">Our Purpose</Jump>
-					<Jump to="#navigation">Navigation</Jump>
-					<Jump to="#our-commitment">Our Commitment</Jump>
+					<Jump to="#incredible">Incredible</Jump>
+					<Jump to="#awesomeness">Awesomeness</Jump>
+					<Jump to="#look-at-them">Look at them!</Jump>
 				</div>
 			</nav>
 		)

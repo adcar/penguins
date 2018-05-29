@@ -59,12 +59,12 @@ class App extends Component {
 				<Navbar />
 				<Splash mountains>
 					<h1 className={classes.title}>
-						Invest in disruptive ideas and the people behind them
+						Penguins: the greatest animals on Earth.
 					</h1>
 				</Splash>
-				<Block color="white" img="two-lions">
-					<div className={classes.anchor} id="our-purpose" />
-					<h2 className={classes.subheading}>Our Purpose.</h2>
+				<Block color="white" img="african">
+					<div className={classes.anchor} id="incredible" />
+					<h2 className={classes.subheading}>They're so incredible.</h2>
 					<p className={classes.desc}>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
 						nec purus sollicitudin, tincidunt sem in, scelerisque ligula. In et
@@ -79,9 +79,9 @@ class App extends Component {
 					<Button>Let's Talk</Button>
 				</Block>
 				<Splash road>
-					<div className={classes.anchor} id="navigation" />
+					<div className={classes.anchor} id="awesomeness" />
 					<h2 className={classes.subheading} style={{ textAlign: 'center' }}>
-						Our Ability to Navigate
+						Admire their supreme awesomeness.
 					</h2>
 					<p
 						className={classes.desc}
@@ -94,9 +94,9 @@ class App extends Component {
 					</p>
 					<WhiteButton>Learn Now</WhiteButton>
 				</Splash>
-				<Block color="#F5F5F5" right img="lion">
-					<div className={classes.anchor} id="our-commitment" />
-					<h2 className={classes.subheading}>Our Commitment.</h2>
+				<Block color="#F5F5F5" right img="emperor">
+					<div className={classes.anchor} id="look-at-them" />
+					<h2 className={classes.subheading}>I mean, just look at them!</h2>
 					<p className={classes.desc}>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
 						nec purus sollicitudin, tincidunt sem in, scelerisque ligula. In et

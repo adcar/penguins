@@ -1,14 +1,16 @@
 import React from 'react'
 import injectSheet from 'react-jss'
+import Penguin from './Penguin'
 const styles = theme => ({
 	root: {
-		height: '50%',
+		height: 600,
 		backgroundColor: 'white',
 		display: 'flex',
 		justifyContent: 'center',
-		alignItems: 'center',
+		alignItems: 'flex-end',
 		backgroundPosition: 'center',
-		backgroundSize: 'cover'
+		backgroundSize: 'cover',
+		marginBottom: 100
 	},
 	greyHeading: {
 		position: 'relative',
@@ -33,9 +35,13 @@ const styles = theme => ({
 })
 const Ending = ({ classes, children }) => (
 	<div className={classes.root}>
-		<h2 className={classes.greyHeading}>
-			5Lion is a diversified holding compay based in McLean, VA
+		<h2
+			className={classes.greyHeading}
+			style={{ marginRight: 50, alignSelf: 'center' }}
+		>
+			This amazing penguin says goodbye!
 		</h2>
+		<Penguin style={{ marginLeft: 50 }} />
 	</div>
 )
 
