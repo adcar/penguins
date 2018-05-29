@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "jss-preset-default": "^4.5.0",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-jss": "^8.4.0",
