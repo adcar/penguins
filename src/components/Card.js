@@ -2,8 +2,6 @@ import React from 'react'
 import injectSheet from 'react-jss'
 import emperor from '../img/emperorPenguin.jpg'
 import african from '../img/africanPenguin.jpg'
-const gradient =
-	'linear-gradient(to bottom right, rgb(43, 24, 76, 0.8), rgba(42, 53, 66, 0.9))'
 const styles = theme => ({
 	root: {
 		height: 250,
@@ -39,12 +37,12 @@ const styles = theme => ({
 		}
 	}
 })
-const Card = ({ classes, children, img }) => {
+const Card = ({ classes, children, img, theme }) => {
 	if (img === 'african') {
 		return (
 			<div
 				className={classes.root}
-				style={{ backgroundImage: `${gradient}, url(${african})` }}
+				style={{ backgroundImage: `${theme.gradient}, url(${african})` }}
 			>
 				<span className={classes.title}>African Penguins</span>
 			</div>
@@ -54,7 +52,7 @@ const Card = ({ classes, children, img }) => {
 			<div
 				className={classes.root}
 				style={{
-					backgroundImage: `${gradient}, url(${emperor})`
+					backgroundImage: `${theme.gradient}, url(${emperor})`
 				}}
 			>
 				<span className={classes.title}>Emperor Penguins</span>

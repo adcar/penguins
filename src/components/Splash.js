@@ -20,15 +20,13 @@ const styles = theme => ({
 		flexDirection: 'column'
 	}
 })
-const gradient =
-	'linear-gradient(to bottom right,rgb(43, 24, 76, 0.95), rgba(42, 53, 66, 0.9))'
-const Splash = ({ classes, children, mountains }) => (
+const Splash = ({ classes, children, mountains, theme }) => (
 	<div
 		className={classes.root}
 		style={
 			mountains
-				? { backgroundImage: `${gradient}, url(${antartica})` }
-				: { backgroundImage: `${gradient}, url(${penguins})` }
+				? { backgroundImage: `${theme.gradient}, url(${antartica})` }
+				: { backgroundImage: `${theme.gradient}, url(${penguins})` }
 		}
 	>
 		<div className={classes.center}>{children}</div>

@@ -2,7 +2,8 @@ import React from 'react'
 import injectSheet from 'react-jss'
 import Jump from './Jump'
 import { bubble as Menu } from 'react-burger-menu'
-import Logo from '../img/logo.png'
+import Logo from '../img/logo.svg'
+import LogoWhite from '../img/logo-white.svg'
 
 const styles = theme => ({
 	root: {
@@ -30,6 +31,9 @@ const styles = theme => ({
 	},
 	item: {
 		padding: theme.spacing.unit
+	},
+	logo: {
+		width: '150px'
 	}
 })
 const menuStyles = {
@@ -131,7 +135,15 @@ class Navbar extends React.Component {
 					</svg>
 
 					<Jump to="#">
-						<img alt="Penguins logo" src={Logo} />
+						{scrolled ? (
+							<img alt="Penguins logo" src={Logo} className={classes.logo} />
+						) : (
+							<img
+								alt="Penguins logo"
+								src={LogoWhite}
+								className={classes.logo}
+							/>
+						)}
 					</Jump>
 
 					<div className={classes.links}>

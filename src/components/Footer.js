@@ -1,6 +1,6 @@
 import React from 'react'
 import injectSheet from 'react-jss'
-import Logo from '../img/logo.png'
+import LogoGreyscale from '../img/logo-greyscale.svg'
 
 const styles = theme => ({
 	root: {
@@ -19,6 +19,7 @@ const styles = theme => ({
 	},
 	logo: {
 		display: 'none',
+		width: '150px',
 		[theme.breakpoints.md]: {
 			display: 'block'
 		}
@@ -26,7 +27,7 @@ const styles = theme => ({
 })
 const Footer = ({ classes, children }) => (
 	<footer className={classes.root}>
-		<img alt="Penguins logo" src={Logo} className={classes.logo} />
+		<img alt="Penguins logo" src={LogoGreyscale} className={classes.logo} />
 		<div className={classes.links}>
 			<a
 				href="https://en.wikipedia.org/wiki/Emperor_penguin"
