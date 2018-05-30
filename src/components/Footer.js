@@ -1,5 +1,7 @@
 import React from 'react'
 import injectSheet from 'react-jss'
+import Logo from '../img/logo.png'
+
 const styles = theme => ({
 	root: {
 		display: 'flex',
@@ -14,11 +16,17 @@ const styles = theme => ({
 		fontSize: 12,
 		padding: 10,
 		margin: '0 10px'
+	},
+	logo: {
+		display: 'none',
+		[theme.breakpoints.md]: {
+			display: 'block'
+		}
 	}
 })
 const Footer = ({ classes, children }) => (
 	<footer className={classes.root}>
-		<img alt="placeholder" src="https://via.placeholder.com/100x50" />
+		<img alt="Penguins logo" src={Logo} className={classes.logo} />
 		<div className={classes.links}>
 			<a
 				href="https://en.wikipedia.org/wiki/Emperor_penguin"

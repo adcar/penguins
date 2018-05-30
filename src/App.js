@@ -14,17 +14,16 @@ const styles = theme => ({
 		height: '100%'
 	},
 	title: {
+		textAlign: 'center',
 		position: 'relative',
-
 		fontFamily: 'Arvo',
 		fontWeight: 400,
 		color: 'white',
 		fontSize: 50,
-		width: 740,
+		maxWidth: 740,
 		'&:before': {
 			content: "'| '",
-			position: 'absolute',
-			left: -23,
+
 			color: '#E0E0E0'
 		},
 		'&:after': {
@@ -41,7 +40,7 @@ const styles = theme => ({
 		'-webkit-text-fill-color': 'transparent'
 	},
 	desc: {
-		width: 500,
+		maxWidth: 500,
 		lineHeight: '1.5em',
 		marginBottom: 50
 	},
@@ -49,69 +48,91 @@ const styles = theme => ({
 		visibility: 'hidden',
 		position: 'relative',
 		bottom: 300
+	},
+	contentWrapper: {
+		padding: theme.spacing.unit * 3
+	},
+	contentWrapperCenter: {
+		padding: theme.spacing.unit * 3,
+		display: 'flex',
+		justifyContent: 'center',
+		flexDirection: 'column',
+		alignItems: 'center'
 	}
 })
 class App extends Component {
 	render() {
 		const { classes } = this.props
 		return (
-			<div className={classes.wrapper}>
+			<div id="outerContainer">
 				<Navbar />
-				<Splash mountains>
-					<h1 className={classes.title}>
-						Penguins: the greatest animals on Earth.
-					</h1>
-				</Splash>
-				<Block color="white" img="african">
-					<div className={classes.anchor} id="incredible" />
-					<h2 className={classes.subheading}>They're so incredible.</h2>
-					<p className={classes.desc}>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-						nec purus sollicitudin, tincidunt sem in, scelerisque ligula. In et
-						enim rutrum, facilisis tellus at, volutpat tellus. Curabitur sit
-						amet nisl diam. Sed a lacus nulla. Morbi eget nisl finibus, gravida
-						nulla quis, congue justo. Nullam quis orci at magna vehicula
-						elementum. Aliquam aliquam orci augue, sed posuere lorem mattis in.
-						Pellentesque efficitur ultricies nibh, eget venenatis neque
-						sollicitudin id. Suspendisse accumsan est sem, nec volutpat felis
-						euismod ac.
-					</p>
-					<Button>Let's Talk</Button>
-				</Block>
-				<Splash road>
-					<div className={classes.anchor} id="awesomeness" />
-					<h2 className={classes.subheading} style={{ textAlign: 'center' }}>
-						Admire their supreme awesomeness.
-					</h2>
-					<p
-						className={classes.desc}
-						style={{ textAlign: 'center', color: 'white' }}
-					>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-						nec purus sollicitudin, tincidunt sem in, scelerisque ligula. In et
-						enim rutrum, facilisis tellus at, volutpat tellus. Curabitur sit
-						amet nisl diam. Sed a lacus nulla.
-					</p>
-					<WhiteButton>Learn Now</WhiteButton>
-				</Splash>
-				<Block color="#F5F5F5" right img="emperor">
-					<div className={classes.anchor} id="look-at-them" />
-					<h2 className={classes.subheading}>I mean, just look at them!</h2>
-					<p className={classes.desc}>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-						nec purus sollicitudin, tincidunt sem in, scelerisque ligula. In et
-						enim rutrum, facilisis tellus at, volutpat tellus. Curabitur sit
-						amet nisl diam. Sed a lacus nulla. Morbi eget nisl finibus, gravida
-						nulla quis, congue justo. Nullam quis orci at magna vehicula
-						elementum. Aliquam aliquam orci augue, sed posuere lorem mattis in.
-						Pellentesque efficitur ultricies nibh, eget venenatis neque
-						sollicitudin id. Suspendisse accumsan est sem, nec volutpat felis
-						euismod ac.
-					</p>
-					<Button>Get Started</Button>
-				</Block>
-				<Ending />
-				<Footer />
+				<div className={classes.wrapper} id="pageWrap">
+					<Splash mountains>
+						<h1 className={classes.title}>
+							Penguins: the greatest animals on Earth.
+						</h1>
+					</Splash>
+					<Block color="white" img="african">
+						<div className={classes.anchor} id="incredible" />
+						<div className={classes.contentWrapper}>
+							<h2 className={classes.subheading}>They're so incredible.</h2>
+							<p className={classes.desc}>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Maecenas nec purus sollicitudin, tincidunt sem in, scelerisque
+								ligula. In et enim rutrum, facilisis tellus at, volutpat tellus.
+								Curabitur sit amet nisl diam. Sed a lacus nulla. Morbi eget nisl
+								finibus, gravida nulla quis, congue justo. Nullam quis orci at
+								magna vehicula elementum. Aliquam aliquam orci augue, sed
+								posuere lorem mattis in. Pellentesque efficitur ultricies nibh,
+								eget venenatis neque sollicitudin id. Suspendisse accumsan est
+								sem, nec volutpat felis euismod ac.
+							</p>
+							<Button>Let's Talk</Button>
+						</div>
+					</Block>
+					<Splash road>
+						<div className={classes.anchor} id="awesomeness" />
+
+						<div className={classes.contentWrapperCenter}>
+							<h2
+								className={classes.subheading}
+								style={{ textAlign: 'center' }}
+							>
+								Admire their supreme awesomeness.
+							</h2>
+							<p
+								className={classes.desc}
+								style={{ textAlign: 'center', color: 'white' }}
+							>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Maecenas nec purus sollicitudin, tincidunt sem in, scelerisque
+								ligula. In et enim rutrum, facilisis tellus at, volutpat tellus.
+								Curabitur sit amet nisl diam. Sed a lacus nulla.
+							</p>
+							<WhiteButton style={{ margin: '0 auto' }}>Learn Now</WhiteButton>
+						</div>
+					</Splash>
+					<Block color="#F5F5F5" right img="emperor">
+						<div className={classes.anchor} id="look-at-them" />
+						<div className={classes.contentWrapper}>
+							<h2 className={classes.subheading}>I mean, just look at them!</h2>
+							<p className={classes.desc}>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Maecenas nec purus sollicitudin, tincidunt sem in, scelerisque
+								ligula. In et enim rutrum, facilisis tellus at, volutpat tellus.
+								Curabitur sit amet nisl diam. Sed a lacus nulla. Morbi eget nisl
+								finibus, gravida nulla quis, congue justo. Nullam quis orci at
+								magna vehicula elementum. Aliquam aliquam orci augue, sed
+								posuere lorem mattis in. Pellentesque efficitur ultricies nibh,
+								eget venenatis neque sollicitudin id. Suspendisse accumsan est
+								sem, nec volutpat felis euismod ac.
+							</p>
+							<Button>Get Started</Button>
+						</div>
+					</Block>
+					<Ending />
+					<Footer />
+				</div>
 			</div>
 		)
 	}

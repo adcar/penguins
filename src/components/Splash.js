@@ -20,7 +20,8 @@ const styles = theme => ({
 		flexDirection: 'column'
 	}
 })
-const gradient = 'linear-gradient(rgb(43, 24, 76, 0.95), rgba(42, 53, 66, 0.9))'
+const gradient =
+	'linear-gradient(to bottom right,rgb(43, 24, 76, 0.95), rgba(42, 53, 66, 0.9))'
 const Splash = ({ classes, children, mountains }) => (
 	<div
 		className={classes.root}

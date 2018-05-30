@@ -2,18 +2,18 @@ import React from 'react'
 import './index.css'
 export default () => {
 	return (
-		<div class="penguin-container">
-			<div class="penguin-body" />
-			<div class="penguin-body-right-inside" />
-			<div class="penguin-body-left-inside" />
-			<div class="penguin-right-wing" />
-			<div class="penguin-left-wing" />
-			<div class="penguin-right-eye" />
-			<div class="penguin-left-eye" />
-			<div class="penguin-nose" />
-			<div class="penguin-left-foot" />
-			<div class="penguin-right-foot" />
-			<div class="shadow" />
+		<div className="penguin-container">
+			<div className="penguin-body" />
+			<div className="penguin-body-right-inside" />
+			<div className="penguin-body-left-inside" />
+			<div className="penguin-right-wing" />
+			<div className="penguin-left-wing" />
+			<div className="penguin-right-eye" />
+			<div className="penguin-left-eye" />
+			<div className="penguin-nose" />
+			<div className="penguin-left-foot" />
+			<div className="penguin-right-foot" />
+			<div className="shadow" />
 		</div>
 	)
 }

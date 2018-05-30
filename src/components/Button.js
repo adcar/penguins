@@ -8,6 +8,8 @@ const styles = theme => ({
 		borderColor: 'green',
 		borderStyle: 'solid',
 		borderWidth: 2,
+		transition: 'all 0.25s ease-out',
+		cursor: 'pointer',
 		borderImage: `${theme.accentGradient} 20`,
 		color: '#fb6976',
 		'&:hover': {
