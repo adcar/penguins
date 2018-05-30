@@ -5,7 +5,7 @@ import penguins from '../img/emperorPenguins.jpg'
 const styles = theme => ({
 	root: {
 		height: '110%',
-		backgroundColor: 'tomato',
+		backgroundColor: theme.palette.mix,
 		display: 'flex',
 		justifyContent: 'center',
 		alignItems: 'center',

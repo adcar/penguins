@@ -6,7 +6,7 @@ const styles = theme => ({
 	root: {
 		height: 250,
 		width: '90vw',
-		backgroundColor: 'tomato',
+		backgroundColor: theme.palette.mix,
 		backgroundPosition: 'center',
 		backgroundSize: 'cover',
 		display: 'flex',
@@ -14,7 +14,7 @@ const styles = theme => ({
 		borderWidth: '0px',
 		borderBottomWidth: '5px',
 		borderStyle: 'solid',
-		borderColor: 'tomato',
+		borderColor: theme.palette.mix,
 		borderImage: `${theme.accentGradient} 100`,
 		boxShadow: theme.shadow,
 		[theme.breakpoints.lg]: {

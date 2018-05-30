@@ -8,7 +8,7 @@ const styles = theme => ({
 		[theme.breakpoints.lg]: {
 			height: 600
 		},
-		backgroundColor: 'tomato',
+		backgroundColor: theme.palette.mix,
 		display: 'flex',
 		justifyContent: 'stretch',
 		alignItems: 'center'
