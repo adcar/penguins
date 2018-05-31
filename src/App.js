@@ -77,15 +77,10 @@ class App extends Component {
 						<div className={classes.contentWrapper}>
 							<h2 className={classes.subheading}>They're so incredible.</h2>
 							<p className={classes.desc}>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-								Maecenas nec purus sollicitudin, tincidunt sem in, scelerisque
-								ligula. In et enim rutrum, facilisis tellus at, volutpat tellus.
-								Curabitur sit amet nisl diam. Sed a lacus nulla. Morbi eget nisl
-								finibus, gravida nulla quis, congue justo. Nullam quis orci at
-								magna vehicula elementum. Aliquam aliquam orci augue, sed
-								posuere lorem mattis in. Pellentesque efficitur ultricies nibh,
-								eget venenatis neque sollicitudin id. Suspendisse accumsan est
-								sem, nec volutpat felis euismod ac.
+								I just absolutely love penguins. They're by far the most
+								superior species in the universe (including humans). This
+								penguin, specically, is an African penguin. Defintely a pretty
+								cool type of penguin.
 							</p>
 							<Button>Let's Talk</Button>
 						</div>
@@ -104,10 +99,9 @@ class App extends Component {
 								className={classes.desc}
 								style={{ textAlign: 'center', color: 'white' }}
 							>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-								Maecenas nec purus sollicitudin, tincidunt sem in, scelerisque
-								ligula. In et enim rutrum, facilisis tellus at, volutpat tellus.
-								Curabitur sit amet nisl diam. Sed a lacus nulla.
+								Honestly, just take a look at the majestic posture of the
+								penguins behind this text and tell me penguins aren't the
+								greatest beings this world has to offer.
 							</p>
 							<WhiteButton style={{ margin: '0 auto' }}>Learn Now</WhiteButton>
 						</div>
@@ -117,15 +111,9 @@ class App extends Component {
 						<div className={classes.contentWrapper}>
 							<h2 className={classes.subheading}>I mean, just look at them!</h2>
 							<p className={classes.desc}>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-								Maecenas nec purus sollicitudin, tincidunt sem in, scelerisque
-								ligula. In et enim rutrum, facilisis tellus at, volutpat tellus.
-								Curabitur sit amet nisl diam. Sed a lacus nulla. Morbi eget nisl
-								finibus, gravida nulla quis, congue justo. Nullam quis orci at
-								magna vehicula elementum. Aliquam aliquam orci augue, sed
-								posuere lorem mattis in. Pellentesque efficitur ultricies nibh,
-								eget venenatis neque sollicitudin id. Suspendisse accumsan est
-								sem, nec volutpat felis euismod ac.
+								This emporer penguin perfectly resembles a Greek God. In fact,
+								if Zeus were to take form of any animal, you can count on him
+								taking the form of an emprer penguin.
 							</p>
 							<Button>Get Started</Button>
 						</div>
