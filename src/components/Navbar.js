@@ -100,6 +100,7 @@ class Navbar extends React.Component {
 					onStateChange={this.handleStateChange.bind(this)}
 					styles={menuStyles}
 					customCrossIcon={<img src={closeIcon} alt="Close menu" />}
+					customBurgerIcon={false}
 				>
 					<img
 						alt="Penguins logo"
