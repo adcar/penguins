@@ -2,8 +2,11 @@ import React from 'react'
 import injectSheet from 'react-jss'
 import antartica from '../img/antartica.jpg'
 import penguins from '../img/emperorPenguins.jpg'
+import Cited from './Cited'
 const styles = theme => ({
 	root: {
+		position: 'relative',
+		zIndex: '-1',
 		height: '110%',
 		backgroundColor: theme.palette.mix,
 		display: 'flex',
@@ -30,6 +33,31 @@ const Splash = ({ classes, children, mountains, theme }) => (
 		}
 	>
 		<div className={classes.center}>{children}</div>
+		{mountains ? (
+			<Cited
+				corner
+				author={{
+					name: 'Filip Zrnzević',
+					link: 'https://unsplash.com/@filipz'
+				}}
+				website={{
+					name: 'Unsplash',
+					link: 'https://unsplash.com/'
+				}}
+			/>
+		) : (
+			<Cited
+				corner
+				author={{
+					name: 'Ian Parker',
+					link: 'https://unsplash.com/@evanescentlight'
+				}}
+				website={{
+					name: 'Unsplash',
+					link: 'https://unsplash.com/'
+				}}
+			/>
+		)}
 	</div>
 )
 

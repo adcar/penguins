@@ -1,9 +1,11 @@
 import React from 'react'
 import injectSheet from 'react-jss'
+import Cited from './Cited'
 import emperor from '../img/emperorPenguin.jpg'
 import african from '../img/africanPenguin.jpg'
 const styles = theme => ({
 	root: {
+		position: 'relative',
 		height: 250,
 		width: '90vw',
 		backgroundColor: theme.palette.mix,
@@ -44,6 +46,13 @@ const Card = ({ classes, children, img, theme }) => {
 				className={classes.root}
 				style={{ backgroundImage: `${theme.gradient}, url(${african})` }}
 			>
+				<Cited
+					author={{
+						name: 'jean wimmerlin',
+						link: 'https://unsplash.com/@jwimmerli'
+					}}
+					website={{ name: 'Unsplash', link: 'https://unsplash.com/' }}
+				/>
 				<span className={classes.title}>African Penguins</span>
 			</div>
 		)
@@ -55,6 +64,16 @@ const Card = ({ classes, children, img, theme }) => {
 					backgroundImage: `${theme.gradient}, url(${emperor})`
 				}}
 			>
+				<Cited
+					author={{
+						name: 'Ian Parker',
+						link: 'https://unsplash.com/@evanescentlight'
+					}}
+					website={{
+						name: 'Unsplash',
+						link: 'https://unsplash.com/'
+					}}
+				/>
 				<span className={classes.title}>Emperor Penguins</span>
 			</div>
 		)
