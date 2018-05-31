@@ -4,6 +4,8 @@ import Jump from './Jump'
 import { bubble as Menu } from 'react-burger-menu'
 import Logo from '../img/logo.svg'
 import LogoWhite from '../img/logo-white.svg'
+import closeIcon from '../img/close.svg'
+import cx from 'classnames'
 
 const styles = theme => ({
 	root: {
@@ -34,6 +36,9 @@ const styles = theme => ({
 	},
 	logo: {
 		width: '150px'
+	},
+	mobileLogo: {
+		paddingBottom: theme.spacing.unit
 	}
 })
 const menuStyles = {
@@ -45,7 +50,7 @@ const menuStyles = {
 	bmMorphShape: { fill: '#2B2747' },
 	bmItemList: {
 		boxSizing: 'border-box',
-		padding: 20,
+		padding: 10,
 		color: 'white',
 		width: '100%',
 		display: 'flex',
@@ -93,7 +98,13 @@ class Navbar extends React.Component {
 					isOpen={open}
 					onStateChange={this.handleStateChange.bind(this)}
 					styles={menuStyles}
+					customCrossIcon={<img src={closeIcon} alt="Close menu" />}
 				>
+					<img
+						alt="Penguins logo"
+						src={LogoWhite}
+						className={cx(classes.mobileLogo, classes.logo)}
+					/>
 					<Jump to="#incredible" className={classes.item}>
 						Incredible
 					</Jump>

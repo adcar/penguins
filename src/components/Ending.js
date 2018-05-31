@@ -20,6 +20,7 @@ const styles = theme => ({
 	greyHeading: {
 		paddingLeft: theme.spacing.unit * 2,
 		marginBottom: theme.spacing.unit * 10,
+		textAlign: 'center',
 		position: 'relative',
 		color: '#838a96',
 		fontWeight: 400,
@@ -27,14 +28,12 @@ const styles = theme => ({
 		fontSize: 40,
 		maxWidth: 500,
 		'&:before': {
-			position: 'absolute',
-			left: -28,
-			content: "' |'",
+			content: "'|'",
 			paddingRight: 20,
 			color: '#fb6976'
 		},
 		'&:after': {
-			content: "'| '",
+			content: "'|'",
 			paddingLeft: 20,
 			color: '#fb6976'
 		}
