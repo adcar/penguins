@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import injectSheet from 'react-jss'
-import './icb.css'
+import './main.css'
 import Splash from './components/Splash'
 import Block from './components/Block'
 import Ending from './components/Ending'

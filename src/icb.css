@@ -1,9 +1,0 @@
-html,
-body,
-#root,
-#outerContainer {
-	height: 100%;
-}
-html {
-	scroll-behavior: smooth;
-}
