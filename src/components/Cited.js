@@ -17,8 +17,8 @@ const Cited = ({ classes, children, author, website, corner, theme }) => (
 			corner
 				? { bottom: 5, left: 5 }
 				: {
-						top: 5,
-
+						top: 10,
+						right: 10,
 						color: '#E0E0E0',
 						fontSize: 10
 				  }
@@ -37,7 +37,7 @@ const Cited = ({ classes, children, author, website, corner, theme }) => (
 Cited.propTypes = {
 	author: PropTypes.object.isRequired,
 	website: PropTypes.object.isRequired,
-	corner: PropTypes.bool.isRequired
+	corner: PropTypes.bool
 }
 
 export default injectSheet(styles)(Cited)

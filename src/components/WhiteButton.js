@@ -5,7 +5,7 @@ const styles = theme => ({
 		height: 50,
 		width: 220,
 		backgroundColor: 'transparent',
-		transition: 'all 0.25s ease-out',
+		transition: theme.trans,
 		cursor: 'pointer',
 		borderColor: 'white',
 		borderStyle: 'solid',

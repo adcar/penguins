@@ -16,7 +16,7 @@ const styles = theme => ({
 		justifyContent: 'space-around',
 		alignItems: 'center',
 		width: '100%',
-		transition: 'all 0.25s ease-out'
+		transition: theme.trans
 	},
 	icon: {
 		display: 'block',
@@ -32,7 +32,8 @@ const styles = theme => ({
 		}
 	},
 	item: {
-		padding: theme.spacing.unit
+		padding: theme.spacing.unit,
+		backgroundColor: 'red'
 	},
 	logo: {
 		width: '150px'
@@ -145,7 +146,12 @@ class Navbar extends React.Component {
 						/>
 					</svg>
 
-					<Jump to="#">
+					<Jump
+						to="#"
+						styles={{
+							backgroundColor: 'transparent !important'
+						}}
+					>
 						{scrolled ? (
 							<img alt="Penguins logo" src={Logo} className={classes.logo} />
 						) : (
