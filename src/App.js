@@ -113,7 +113,7 @@ class App extends Component {
 							<p className={classes.desc}>
 								This emporer penguin perfectly resembles a Greek God. In fact,
 								if Zeus were to take form of any animal, you can count on him
-								taking the form of an emprer penguin.
+								taking the form of an emporer penguin.
 							</p>
 							<Button>Get Started</Button>
 						</div>
