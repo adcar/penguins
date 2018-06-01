@@ -27,7 +27,7 @@ const styles = theme => ({
 })
 class Jump extends React.Component {
 	render() {
-		const { classes, children, to, styles } = this.props
+		const { classes, children, to } = this.props
 
 		return (
 			<a
