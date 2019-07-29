@@ -111,9 +111,9 @@ class App extends Component {
 						<div className={classes.contentWrapper}>
 							<h2 className={classes.subheading}>I mean, just look at them!</h2>
 							<p className={classes.desc}>
-								This emporer penguin perfectly resembles a Greek God. In fact,
+								This emperor penguin perfectly resembles a Greek God. In fact,
 								if Zeus were to take form of any animal, you can count on him
-								taking the form of an emporer penguin.
+								taking the form of an emperor penguin.
 							</p>
 							<Button>Get Started</Button>
 						</div>
