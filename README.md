@@ -1,6 +1,7 @@
-# Cawd2 Final
+# Penguins!
 
-Source code for the Cawd2 Final.
+Source code for the [Penguins!](https://penguins.acardosi.dev/) website.
+
 
 ## About
 
