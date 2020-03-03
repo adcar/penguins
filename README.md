@@ -11,7 +11,7 @@ Uses create-react-app for a starter, jss for styling, and react-burger-menu for 
 
 ```
 git clone https://github.com/adcar/cawd2-final
-cd cawd2-final
+cd penguins
 npm install
 npm run start
 ```
