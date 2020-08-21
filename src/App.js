@@ -79,7 +79,7 @@ class App extends Component {
 							<p className={classes.desc}>
 								I just absolutely love penguins. They're by far the most
 								superior species in the universe (including humans). This
-								penguin, specically, is an African penguin. Defintely a pretty
+								penguin, specically, is an African penguin. Definitely a pretty
 								cool type of penguin.
 							</p>
 							<Button>Let's Talk</Button>
